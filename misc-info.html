@@ -55,22 +55,75 @@
       </div>
     </nav>
   </div>
-  <footer class="pb-5 bg-primary-3 text-light">
+  <footer class="pb-4 bg-primary-3 text-light" id="footer">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="h1">Questions?</div>
-          <div class="my-5">
-            <a href="#" class="btn btn-lg btn-primary">Get In Touch</a>
-          </div>
+      <div class="row mb-5">
+        <div class="col-6 col-lg-3 col-xl-2">
+          <h5>Navigate</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Art</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg">
+          <ul class="list-unstyled">
+            <a href="">
+              <h5><img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="mail icon" data-inject-svg /> Contact</h5>
+            </a>
+            <div class="ml-3">
+              <a href="#">hello@company.io</a>
+            </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
+          <h5>Subscribe</h5>
+          <p>Be updated when a post drops</p>
+          <form action="/forms/mailchimp.php" data-form-email novalidate>
+            <div class="form-row">
+              <div class="col-12">
+                <input type="email" class="form-control mb-2" placeholder="Email Address" name="email" required>
+              </div>
+              <div class="col-12">
+                <div class="d-none alert alert-success" role="alert" data-success-message>
+                  Thanks, a member of our team will be in touch shortly.
+                </div>
+                <div class="d-none alert alert-danger" role="alert" data-error-message>
+                  Please fill all fields correctly.
+                </div>
+                <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft">
+                </div>
+                <button type="submit" class="btn btn-primary btn-loading btn-block" data-loading-text="Sending">
+                  <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
+                  <span>Subscribe</span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <small class="text-muted form-text">We’ll never share your details. See our <a href="#">Privacy Policy</a>
+          </small>
+
         </div>
       </div>
-      <div class="row mb-4">
-        <div class="col">
+      <div class="row justify-content-center mb-2">
+        <div class="col-auto">
           <ul class="nav">
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <img class="icon" src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+                <img class="icon " src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
               </a>
             </li>
             <li class="nav-item">
@@ -86,9 +139,10 @@
           </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="col-auto">
+      <div class="row justify-content-center">
+        <div class="col col-md-auto text-center">
           <small class="text-muted">©2021 All Rights Reserved. RIVRE OF SOMA® is a registered trademark</small>
+          </small>
         </div>
       </div>
     </div>
