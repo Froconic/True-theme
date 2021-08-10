@@ -41,13 +41,13 @@
                 <a href="art.html" class="nav-link">Art</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
+                <a href="about.html" class="nav-link">About</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="contact.html" class="nav-link">Contact</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Support</a>
+                <a href="support.html" class="nav-link">Support</a>
               </li>
             </ul>
           </div>
@@ -56,119 +56,147 @@
     </nav>
   </div>
 
-  <section class="bg-primary-3 text-light">
-    <div class="container mt-lg-6">
-      <div class="row">
+  <section class="bg-dark text-light header-inner p-0 jarallax position-relative" data-jarallax data-speed="0.2" data-overlay>
+    <img src="assets/img/inner-6.jpg" alt="Image" class="jarallax-img opacity-40">
+    <div class="container py-0">
+      <div class="row my-3">
         <div class="col">
-          <h1 class="display-3">Welcome to<br> <span>RIVRE</span> <span>OF</span> <span>SOMA</span></h1>
-          <div class="my-4">
-            <p class="lead">Elevation of the <br>Mind | Body | Soul<br>With<br>Magic | Mystery | Mysticism</p>
+        </div>
+      </div>
+      <div class="row my-4 my-md-6" data-aos="fade-up">
+        <div class="col-lg-9 col-xl-8">
+          <h1 class="display-4">Show Support</h1>
+          <p class="lead mb-0">Reach out with questions, convo or just to say hello!</p>
+        </div>
+      </div>
+    </div>
+    <div class="divider">
+      <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9 col-lg-8 col-xl-6">
+          <div class="text-center mb-4">
+            <h2 class="h1">Leave a message</h2>
+            <p class="lead">
+            </p>
           </div>
-          <div class="accordion" id="accordionExample">
-            <div class="card bg-transparent">
-              <div class="card-header p-0" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-primary btn-lg mx-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Learn More
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  The aim of this platform is to become a repository for my expressions. From my thoughts, wisdom I have gained, my art and more. I want this to be a nonlocal resource for myself and others to learn more about how to better interface with the seen and unseen reality. RIVRE = Real Insights eVolve REality. SOMA is a multifaceted epithet that can be boiled down to Science Of Metaphysical Art. So browse around and see what delights your fancy
+          <form action="/forms/smtp.php" data-form-email novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Your Name *</label>
+                  <input name="contact-name" type="text" class="form-control" required>
+                  <div class="invalid-feedback">
+                    Please type your name.
+                  </div>
                 </div>
               </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Email Address *</label>
+                  <input name="contact-email" type="email" placeholder="you@yoursite.com" class="form-control" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label>Message:</label>
+                  <textarea class="form-control" name="contact-message" rows="10" placeholder="How can we help?"></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"></div>
+              </div>
+              <div class="col">
+                <div class="d-none alert alert-success" role="alert" data-success-message>
+                  Thanks, a member of our team will be in touch shortly.
+                </div>
+                <div class="d-none alert alert-danger" role="alert" data-error-message>
+                  Please fill all fields correctly.
+                </div>
+                <button type="submit" class="btn btn-primary btn-loading" data-loading-text="Sending">
+                  <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
+                  <span>Send Message</span>
+                </button>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="bg-primary-3 text-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Blog</h2>
-      <div class="row">
-        <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="#">
-            <img src="assets/img/misc/BGO.svg" alt="Article image" class="rounded mb-3">
-          </a>
-          <a href="#">
-            <h4 class="mb-1">Post 1</h4>
-            <div class="text-small text-muted">Test</div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="#">
-            <img src="assets/img/misc/BOG.svg" alt="Article image" class="rounded mb-3">
-          </a>
-          <a href="#">
-            <h4 class="mb-1">Post 2</h4>
-            <div class="text-small text-muted">Test</div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="#">
-            <img src="assets/img/misc/OGB.svg" alt="Article image" class="rounded mb-3">
-          </a>
-          <a href="#">
-            <h4 class="mb-1">Post 3</h4>
-            <div class="text-small text-muted">Test</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="bg-primary-3 text-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Art</h2>
-      <div class="row">
-        <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="#">
-            <img src="assets/img/misc/BGO.svg" alt="Article image" class="rounded mb-3">
-          </a>
-          <a href="#">
-            <h4 class="mb-1">Post 1</h4>
-            <div class="text-small text-muted">Test</div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="#">
-            <img src="assets/img/misc/BOG.svg" alt="Article image" class="rounded mb-3">
-          </a>
-          <a href="#">
-            <h4 class="mb-1">Post 2</h4>
-            <div class="text-small text-muted">Test</div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="#">
-            <img src="assets/img/misc/OGB.svg" alt="Article image" class="rounded mb-3">
-          </a>
-          <a href="#">
-            <h4 class="mb-1">Post 3</h4>
-            <div class="text-small text-muted">Test</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+          </form>
 
-  <footer class="pb-5 bg-primary-3 text-light">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="h1">Questions?</div>
-          <div class="my-5">
-            <a href="#" class="btn btn-lg btn-primary">Get In Touch</a>
-          </div>
         </div>
       </div>
-      <div class="row mb-4">
-        <div class="col">
+    </div>
+  </section>
+  <footer class="pb-4 bg-primary-3 text-light" id="footer">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-6 col-lg-3 col-xl-2">
+          <h5>Navigate</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Art</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg">
+          <ul class="list-unstyled">
+            <a href="">
+              <h5><img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="mail icon" data-inject-svg /> Contact</h5>
+            </a>
+            <div class="ml-3">
+              <a href="#">hello@company.io</a>
+            </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
+          <h5>Subscribe</h5>
+          <p>Be updated when a post drops</p>
+          <form action="/forms/mailchimp.php" data-form-email novalidate>
+            <div class="form-row">
+              <div class="col-12">
+                <input type="email" class="form-control mb-2" placeholder="Email Address" name="email" required>
+              </div>
+              <div class="col-12">
+                <div class="d-none alert alert-success" role="alert" data-success-message>
+                  Thanks, a member of our team will be in touch shortly.
+                </div>
+                <div class="d-none alert alert-danger" role="alert" data-error-message>
+                  Please fill all fields correctly.
+                </div>
+                <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft">
+                </div>
+                <button type="submit" class="btn btn-primary btn-loading btn-block" data-loading-text="Sending">
+                  <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
+                  <span>Subscribe</span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <small class="text-muted form-text">We’ll never share your details. See our <a href="#">Privacy Policy</a>
+          </small>
+
+        </div>
+      </div>
+      <div class="row justify-content-center mb-2">
+        <div class="col-auto">
           <ul class="nav">
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <img class="icon" src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+                <img class="icon " src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
               </a>
             </li>
             <li class="nav-item">
@@ -184,14 +212,17 @@
           </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="col-auto">
+      <div class="row justify-content-center">
+        <div class="col col-md-auto text-center">
           <small class="text-muted">©2021 All Rights Reserved. RIVRE OF SOMA® is a registered trademark</small>
+          </small>
         </div>
       </div>
     </div>
   </footer>
-
+  <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+    <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+  </a>
   <!-- Required vendor scripts (Do not remove) -->
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/popper.min.js"></script>
