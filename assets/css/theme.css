@@ -5004,20 +5004,20 @@ button.bg-dark:focus {
   background-color: #0a0c0d !important; }
 
 .bg-primary-2 {
-  background-color: #FF8E88 !important; }
+  background-color: #FFE357 !important; }
 
 a.bg-primary-2:hover, a.bg-primary-2:focus,
 button.bg-primary-2:hover,
 button.bg-primary-2:focus {
-  background-color: #ff5e55 !important; }
+  background-color: #CCAA00 !important; }
 
 .bg-primary-3 {
-  background-color: #1B1F3B !important; }
+  background-color: #24FF85 !important; }
 
 a.bg-primary-3:hover, a.bg-primary-3:focus,
 button.bg-primary-3:hover,
 button.bg-primary-3:focus {
-  background-color: #0b0d18 !important; }
+  background-color: #00a048 !important; }
 
 .bg-white {
   background-color: #EBF4FF !important; }
@@ -7807,13 +7807,13 @@ a.text-danger:hover, a.text-danger:focus {
   color: #a71d2a !important; }
 
 .text-light {
-  color: #f8f9fa !important; }
+  color: #EBF4FF !important; }
 
 a.text-light:hover, a.text-light:focus {
   color: #cbd3da !important; }
 
 .text-dark {
-  color: #212529 !important; }
+  color: #000A14 !important; }
 
 a.text-dark:hover, a.text-dark:focus {
   color: black !important; }
