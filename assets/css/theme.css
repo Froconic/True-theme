@@ -8531,13 +8531,13 @@ svg.bg-dark-alt * {
   fill: #f2f2f2; }
 
 svg.bg-primary-2 * {
-  fill: #FF8E88; }
+  fill: #FFE357; }
 
 svg.bg-primary-2-alt * {
-  fill: #EBF4FF8f8; }
+  fill: #EBF4FF; }
 
 svg.bg-primary-3 * {
-  fill: #1B1F3B; }
+  fill: #24FF85; }
 
 svg.bg-primary-3-alt * {
   fill: #f1f2f3; }
@@ -8856,7 +8856,7 @@ section {
   background: #f3f5fb; }
 
 .bg-primary-2-alt {
-  background: #EBF4FF8f8; }
+  background: #EBF4FF; }
 
 .bg-primary-3-alt {
   background: #f1f2f3; }
@@ -11644,20 +11644,20 @@ https://flickity.metafizzy.co
     fill: #EBF4FF; }
 
 .hover-bg-primary-2:hover {
-  background: #FF8E88;
-  border-color: #FF8E88;
-  color: #212529; }
+  background: #b99a00;
+  border-color: #b99a00;
+  color: #000A14; }
   .hover-bg-primary-2:hover h1, .hover-bg-primary-2:hover h2, .hover-bg-primary-2:hover h3, .hover-bg-primary-2:hover h5, .hover-bg-primary-2:hover h6, .hover-bg-primary-2:hover h5, .hover-bg-primary-2:hover .h1, .hover-bg-primary-2:hover .h2, .hover-bg-primary-2:hover .h3, .hover-bg-primary-2:hover .h4, .hover-bg-primary-2:hover .h5, .hover-bg-primary-2:hover .h6 {
-    color: #212529; }
+    color: #000A14; }
   .hover-bg-primary-2:hover .icon-round {
     background: rgba(33, 37, 41, 0.1) !important; }
   .hover-bg-primary-2:hover .icon * {
-    fill: #212529; }
+    fill: #000A14; }
 
 .hover-bg-primary-3:hover {
-  background: #1B1F3B;
-  border-color: #1B1F3B;
-  color: #EBF4FF; }
+  background: #24FF85;
+  border-color: #24FF85;
+  color: #000A14; }
   .hover-bg-primary-3:hover h1, .hover-bg-primary-3:hover h2, .hover-bg-primary-3:hover h3, .hover-bg-primary-3:hover h5, .hover-bg-primary-3:hover h6, .hover-bg-primary-3:hover h5, .hover-bg-primary-3:hover .h1, .hover-bg-primary-3:hover .h2, .hover-bg-primary-3:hover .h3, .hover-bg-primary-3:hover .h4, .hover-bg-primary-3:hover .h5, .hover-bg-primary-3:hover .h6 {
     color: #EBF4FF; }
   .hover-bg-primary-3:hover .icon-round {
