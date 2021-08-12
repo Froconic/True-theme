@@ -2051,17 +2051,17 @@ fieldset:disabled a.btn {
 
 .btn-primary-2 {
   color: #212529;
-  background-color: #FF8E88;
-  border-color: #FF8E88; }
+  background-color: #FFE357;
+  border-color: #FFE357; }
   .btn-primary-2:hover {
     color: #EBF4FF;
-    background-color: #ff6a62;
-    border-color: #ff5e55; }
+    background-color: #c4a300;
+    border-color: #c4a300; }
   .btn-primary-2:focus, .btn-primary-2.focus {
     color: #EBF4FF;
-    background-color: #ff6a62;
-    border-color: #ff5e55;
-    box-shadow: 0 0 0 0.2rem rgba(222, 126, 122, 0.5); }
+    background-color: #c4a300;
+    border-color: #c4a300;
+    box-shadow: 0 0 0 0.2rem #c4a30067; }
   .btn-primary-2.disabled, .btn-primary-2:disabled {
     color: #212529;
     background-color: #FF8E88;
@@ -2069,25 +2069,25 @@ fieldset:disabled a.btn {
   .btn-primary-2:not(:disabled):not(.disabled):active, .btn-primary-2:not(:disabled):not(.disabled).active,
   .show > .btn-primary-2.dropdown-toggle {
     color: #EBF4FF;
-    background-color: #ff5e55;
-    border-color: #ff5148; }
+    background-color: #FFE357;
+    border-color: #ecc500; }
     .btn-primary-2:not(:disabled):not(.disabled):active:focus, .btn-primary-2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary-2.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(222, 126, 122, 0.5); }
 
 .btn-primary-3 {
   color: #EBF4FF;
-  background-color: #1B1F3B;
-  border-color: #1B1F3B; }
+  background-color: #24FF85;
+  border-color: #24FF85; }
   .btn-primary-3:hover {
     color: #EBF4FF;
-    background-color: #0f1121;
-    border-color: #0b0d18; }
+    background-color: #009e47;
+    border-color: #009e47; }
   .btn-primary-3:focus, .btn-primary-3.focus {
     color: #EBF4FF;
-    background-color: #0f1121;
-    border-color: #0b0d18;
-    box-shadow: 0 0 0 0.2rem rgba(61, 65, 88, 0.5); }
+    background-color: #009e47;
+    border-color: #009e47;
+    box-shadow: 0 0 0 0.2rem #009e4765; }
   .btn-primary-3.disabled, .btn-primary-3:disabled {
     color: #EBF4FF;
     background-color: #1B1F3B;
@@ -4996,7 +4996,11 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
+  background-color: #000A14 !important; }
+
+  .bg-black {
   background-color: #212529 !important; }
+
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -7964,7 +7968,7 @@ img.bg-image {
   flex-shrink: 0; }
 
 .btn.btn-primary * {
-  fill: #EBF4FF; }
+  fill: #4B5158; }
 
 .btn-outline-primary:hover * {
   fill: #EBF4FF; }
@@ -7988,10 +7992,10 @@ img.bg-image {
   fill: #EBF4FF; }
 
 .btn.btn-warning * {
-  fill: #212529; }
+  fill: #000A14; }
 
 .btn-outline-warning:hover * {
-  fill: #212529; }
+  fill: #000A14; }
 
 .btn.btn-danger * {
   fill: #EBF4FF; }
@@ -8000,10 +8004,10 @@ img.bg-image {
   fill: #EBF4FF; }
 
 .btn.btn-light * {
-  fill: #212529; }
+  fill: #000A14; }
 
 .btn-outline-light:hover * {
-  fill: #212529; }
+  fill: #000A14; }
 
 .btn.btn-dark * {
   fill: #EBF4FF; }
@@ -8012,16 +8016,16 @@ img.bg-image {
   fill: #EBF4FF; }
 
 .btn.btn-primary-2 * {
-  fill: #212529; }
+  fill: #4B5158; }
 
 .btn-outline-primary-2:hover * {
-  fill: #212529; }
+  fill: #EBF4FF; }
 
 .btn.btn-primary-3 * {
-  fill: #EBF4FF; }
+  fill: #4B5158; }
 
 .btn-outline-primary-3:hover * {
-  fill: #EBF4FF; }
+  fill: #000A14; }
 
 .btn-light {
   border-color: #000A14;
@@ -8474,25 +8478,25 @@ img[data-inject-svg] {
   opacity: 0; }
 
 svg.icon * {
-  fill: #2388FF; }
+  fill: #EBF4FF; }
 
 svg.icon[class*='bg-'] {
   background: none !important; }
 
 svg.bg-white * {
-  fill: #EBF4FF; }
+  fill: #000A14; }
 
 svg.bg-primary * {
-  fill: #2388FF; }
+  fill: #EBF4FF; }
 
 svg.bg-primary-alt * {
-  fill: #f3f5fb; }
+  fill: #EBF4FF; }
 
 svg.bg-secondary * {
   fill: #6c757d; }
 
 svg.bg-secondary-alt * {
-  fill: #f6f7f7; }
+  fill: #EBF4FF; }
 
 svg.bg-success * {
   fill: #28a745; }
@@ -8525,19 +8529,19 @@ svg.bg-light-alt * {
   fill: white; }
 
 svg.bg-dark * {
-  fill: #212529; }
+  fill: #EBF4FF; }
 
 svg.bg-dark-alt * {
   fill: #f2f2f2; }
 
 svg.bg-primary-2 * {
-  fill: #FFE357; }
+  fill: #EBF4FF; }
 
 svg.bg-primary-2-alt * {
   fill: #EBF4FF; }
 
 svg.bg-primary-3 * {
-  fill: #24FF85; }
+  fill: #EBF4FF; }
 
 svg.bg-primary-3-alt * {
   fill: #f1f2f3; }
@@ -8546,7 +8550,7 @@ svg.bg-primary-3-alt * {
   fill: #EBF4FF; }
 
 .text-primary svg.icon:not([class*='bg-']) * {
-  fill: #2388FF; }
+  fill: #EBF4FF; }
 
 @font-face {
   font-family: 'Inter UI';

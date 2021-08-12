@@ -199,6 +199,13 @@
       document.querySelector('body').classList.add('loaded');
     });
   </script>
+  <script>
+    const btn = document.querySelector(".btn-toggle");
+
+    btn.addEventListener("click", function () {
+      document.body.classList.toggle("dark-theme");
+    });
+  </script>
 
 </body>
 
