@@ -5,29 +5,57 @@
     function sectionChanger() {
       var a = ''
       var b = ''
+      var c = ''
+      var d = ''
+      var e = ''
 
 
       $("#themeChanger").click(function () {
         a = $("section").hasClass("bg-white")
         b = $("section").hasClass("bg-dark")
+        c = $("section").hasClass("bg-primary")
+        d = $("section").hasClass("bg-primary-2")
+        e = $("section").hasClass("bg-primary-3")
 
-        if (a === true) {
+
+        if (a === true && !$("section").hasClass("has-divider")) {
           $("section").removeClass("bg-white")
           $("section").removeClass("text-dark")
           $("section").addClass("bg-dark")
           $("section").addClass("text-light")
-
         }
-        if (b === true) {
+
+        if (b === true && !$("section").hasClass("has-divider")) {
           $("section").removeClass("bg-dark")
           $("section").removeClass("text-light")
           $("section").addClass("bg-white")
           $("section").addClass("text-dark")
-
-
         }
+
+        if (c === true && $("section").hasClass("has-divider")) {
+          $("section").removeClass("bg-primary")
+          console.log("section with divider detected")
+          temp = Math.floor(Math.random() * bg.length)
+          $("section").addClass(bg[temp])
+          console.log("c & f true")
+          console.log(bg[temp])
+        }
+
+        if (d === true && $("section").hasClass("has-divider")) {
+          $("section").removeClass("bg-primary-2")
+          temp = Math.floor(Math.random() * bg.length)
+          $("section").addClass(bg[temp])
+        }
+
+        if (e === true && $("section").hasClass("has-divider")) {
+          $("section").removeClass("bg-primary-3")
+          temp = Math.floor(Math.random() * bg.length)
+          $("section").addClass(bg[temp])
+        }
+
       })
     }
+
 
     function footerChanger() {
       var a = ''
@@ -212,17 +240,11 @@
 
         if (a === true) {
           $("nav").removeClass("bg-white")
-          console.log("step 1")
           $("nav").addClass("bg-dark")
-          console.log("step 2")
           $("nav a").removeClass("text-dark")
-          console.log("step 3")
           $("nav a").addClass("text-light")
-          console.log("step 4")
           $("nav img").removeAttr("src", "assets/img/logos/logo.png")
-          console.log("step 5")
           $("nav img").attr("src", "assets/img/logos/logo-alt.png")
-          console.log("step 6")
 
         } else {
           $("nav").removeClass("bg-dark")
