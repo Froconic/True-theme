@@ -59,7 +59,7 @@ body {
   line-height: 1.5;
   color: #495057;
   text-align: left;
-  background-color: #EBF4FF; }
+  background-color: #C8CAD0; }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important; }
@@ -9897,7 +9897,7 @@ blockquote {
     background: none !important;
     height: 6vw; }
     .divider svg:not([class*='bg']) path {
-      fill: #EBF4FF; }
+      fill: #C8CAD0; }
   .divider:not(:first-child) {
     top: 1px; }
   .divider:first-child {
