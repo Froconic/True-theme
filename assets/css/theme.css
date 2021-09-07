@@ -4999,7 +4999,7 @@ button.bg-light:focus {
   background-color: #000A14 !important; }
 
   .bg-black {
-  background-color: #212529 !important; }
+  background-color: #C8CAD0 !important; }
 
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -8438,7 +8438,7 @@ section .nav-link, footer .nav-link {
     opacity: 1 !important; }
 
 section:not(.text-light) .nav-link, footer:not(.text-light) .nav-link {
-  color: #212529; }
+  color: #2388FF; }
 
 .nav-link.btn.active {
   background: #2388FF;
