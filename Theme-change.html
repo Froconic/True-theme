@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
   <title>Theme tester</title>
 </head>
+
 <body>
   <div class="navbar-container ">
     <nav class="navbar navbar-expand-lg justify-content-between navbar-dark bg-black border-bottom-0" data-sticky="top">
@@ -50,48 +53,192 @@
     </nav>
   </div>
 
-<section class="bg-black">
-<h1>Hello!</h1>
-<button class="btn btn-secondary" id="themeChanger">
-Change theme
-</button>
-<a href="#" class="btn btn-primary text-light">Test</a>
-<img src="assets/img/logos/logo.png" alt="Test logo" class="logo">
-          <div class="card">
-            <a href="#">
-              <img src="assets/img/article-2.jpg" alt="Image" class="card-img-top">
+  <section class="bg-black">
+    <h1>Hello!</h1>
+    <button class="btn btn-primary" id="themeChanger">
+      Change theme
+    </button>
+    <a href="#" class="btn btn-primary text-light">Test</a>
+    <div class="container">
+    <div class="col-md-6 col-lg-4" data-isotope-item>
+      <a href="#" class="card card-body justify-content-between bg-primary text-light">
+        <div class="d-flex justify-content-between mb-3">
+          <div class="text-small d-flex">
+            <div class="mr-2">
+              Links
+            </div>
+            <span class="opacity-70">19th December</span>
+          </div>
+          <span class="badge bg-primary-alt text-primary">
+            <img class="icon icon-sm bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />27
+          </span>
+        </div>
+        <div>
+          <h2>A time-tracking app that isn’t a pain.</h2>
+          <span class="text-small opacity-70">http://www.website.io/link</span>
+        </div>
+      </a>
+      <nav>
+        <ul class="pagination mb-0">
+          <li class="page-item active"><a class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  <footer class="pb-4 bg-black text-dark" id="footer">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-6 col-lg-3 col-xl-2">
+          <h5>Navigate</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="art.html" class="nav-link">Art</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="support.html" class="nav-link">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg">
+          <ul class="list-unstyled">
+            <a href="">
+              <h5><img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="mail icon" data-inject-svg /> Contact</h5>
             </a>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between mb-3">
-                <div class="text-small d-flex">
-                  <div class="mr-2">
-                    <a href="#">Design</a>
-                  </div>
-                  <span class="text-muted">27th November</span>
-                </div>
-                <span class="badge bg-primary-alt text-primary">
-                  <img class="icon icon-sm bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />23
-                </span>
+            <div class="ml-3">
+              <a href="#">hello@company.io</a>
+            </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
+          <h5>Subscribe</h5>
+          <p>Be updated when a post drops</p>
+          <form action="/forms/mailchimp.php" data-form-email novalidate>
+            <div class="form-row">
+              <div class="col-12">
+                <input type="email" class="form-control mb-2" placeholder="Email Address" name="email" required>
               </div>
-              <a href="#">
-                <h4>Forging your path</h4>
-              </a>
-              <p class="flex-grow-1">
-                Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-              </p>
-              <div class="d-flex align-items-center mt-3">
-                <img src="assets/img/avatars/male-4.jpg" alt="Image" class="avatar avatar-sm">
-                <div class="ml-1">
-                  <span class="text-small text-muted">By</span>
-                  <span class="text-small">Cedric</span>
+              <div class="col-12">
+                <div class="d-none alert alert-success" role="alert" data-success-message>
+                  Thanks, a member of our team will be in touch shortly.
                 </div>
+                <div class="d-none alert alert-danger" role="alert" data-error-message>
+                  Please fill all fields correctly.
+                </div>
+                <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft">
+                </div>
+                <button type="submit" class="btn btn-primary btn-loading btn-block" data-loading-text="Sending">
+                  <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
+                  <span>Subscribe</span>
+                </button>
               </div>
             </div>
-          </div>
+          </form>
+          <small class="text-muted form-text">We’ll never share your details. See our <a href="#">Privacy Policy</a>
+          </small>
 
-</section>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-2">
+        <div class="col-auto">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img class="icon " src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img class="icon " src="assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img class="icon " src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col col-md-auto text-center">
+          <small class="text-muted">©2021 All Rights Reserved. RIVRE OF SOMA® is a registered trademark</small>
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    </div>
+
+  </section>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-<script src="assets/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+  <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+  <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+  <script type="text/javascript" src="assets/js/aos.js"></script>
+  <!-- Clipboard (copies content from browser into OS clipboard) -->
+  <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+  <!-- Fancybox (handles image and video lightbox and galleries) -->
+  <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+  <!-- Flatpickr (calendar/date/time picker UI) -->
+  <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+  <!-- Flickity (handles touch enabled carousels and sliders) -->
+  <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+  <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+  <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+  <!-- Isotope (masonry layouts and filtering) -->
+  <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+  <!-- jarallax (parallax effect and video backgrounds) -->
+  <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+  <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+  <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+  <!-- jQuery Countdown (displays countdown text to a specified date) -->
+  <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+  <!-- jQuery smartWizard facilitates steppable wizard content -->
+  <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+  <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+  <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+  <!-- Prism (displays formatted code boxes) -->
+  <script type="text/javascript" src="assets/js/prism.js"></script>
+  <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+  <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+  <!-- Smooth scroll (animation to links in-page)-->
+  <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+  <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+  <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+  <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+  <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+  <!-- Typed text (animated typing effect)-->
+  <script type="text/javascript" src="assets/js/typed.min.js"></script>
+  <!-- Required theme scripts (Do not remove) -->
+  <script type="text/javascript" src="assets/js/theme.js"></script>
+  <!-- Removes page load animation when window is finished loading -->
+  <script type="text/javascript">
+    window.addEventListener("load", function () {
+      document.querySelector('body').classList.add('loaded');
+    });
+  </script>
+
+  <script src="assets/js/app.js"></script>
 </body>
+
 </html>

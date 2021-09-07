@@ -1,121 +1,30 @@
     var bg = ["bg-primary", "bg-primary-2", "bg-primary-3"];
     var btn = ["btn-primary", "btn-primary-2", "btn-primary-3"];
-
-
-    function sectionChanger() {
-      var a = ''
-      var b = ''
-      var c = ''
-      var d = ''
-      var e = ''
-
-
-      $("#themeChanger").click(function () {
-        a = $("section").hasClass("bg-white")
-        b = $("section").hasClass("bg-dark")
-        c = $("section").hasClass("bg-primary")
-        d = $("section").hasClass("bg-primary-2")
-        e = $("section").hasClass("bg-primary-3")
-
-
-        if (a === true && !$("section").hasClass("has-divider")) {
-          $("section").removeClass("bg-white")
-          $("section").removeClass("text-dark")
-          $("section").addClass("bg-dark")
-          $("section").addClass("text-light")
-        }
-
-        if (b === true && !$("section").hasClass("has-divider")) {
-          $("section").removeClass("bg-dark")
-          $("section").removeClass("text-light")
-          $("section").addClass("bg-white")
-          $("section").addClass("text-dark")
-        }
-
-        if (c === true && $("section").hasClass("has-divider")) {
-          $("section").removeClass("bg-primary")
-          console.log("section with divider detected")
-          temp = Math.floor(Math.random() * bg.length)
-          $("section").addClass(bg[temp])
-          console.log("c & f true")
-          console.log(bg[temp])
-        }
-
-        if (d === true && $("section").hasClass("has-divider")) {
-          $("section").removeClass("bg-primary-2")
-          temp = Math.floor(Math.random() * bg.length)
-          $("section").addClass(bg[temp])
-        }
-
-        if (e === true && $("section").hasClass("has-divider")) {
-          $("section").removeClass("bg-primary-3")
-          temp = Math.floor(Math.random() * bg.length)
-          $("section").addClass(bg[temp])
-        }
-
-      })
-    }
-
-
-    function footerChanger() {
-      var a = ''
-      var b = ''
-
-
-      $("#themeChanger").click(function () {
-        a = $("footer").hasClass("bg-white")
-        b = $("footer").hasClass("bg-dark")
-
-        if (a === true) {
-          $("footer").removeClass("bg-white")
-          $("footer .icon").removeClass("bg-white")
-          $("footer").removeClass("text-dark")
-          $("footer").addClass("bg-dark")
-          $("footer .icon").addClass("bg-dark")
-          $("footer").addClass("text-light")
-
-        }
-        if (b === true) {
-          $("footer").removeClass("bg-dark")
-          $("footer .icon").removeClass("bg-dark")
-          $("footer").removeClass("text-light")
-          $("footer").addClass("bg-white")
-          $("footer .icon").addClass("bg-white")
-          $("footer").addClass("text-dark")
-
-
-        }
-      })
-    }
+    var icon = ["icon", "icon-2", "icon-3", ]
 
     function buttonChanger() {
       var a = ''
       var b = ''
       var c = ''
-      var temp = ''
-
 
       $("#themeChanger").click(function () {
-        a = $("button").hasClass("btn-primary")
-        b = $("button").hasClass("btn-primary-2")
-        c = $("button").hasClass("btn-primary-3")
+        a = $(".btn").hasClass("btn-primary")
+        b = $(".btn").hasClass("btn-primary-2")
+        c = $(".btn").hasClass("btn-primary-3")
 
         if (a === true) {
-          $("button").removeClass("btn-primary")
-          temp = Math.floor(Math.random() * btn.length)
-          $("button").addClass(btn[temp])
+          $(".btn").removeClass("btn-primary")
+          $(".btn").addClass(btn[1])
 
         }
         if (b === true) {
-          $("button").removeClass("btn-primary-2")
-          temp = Math.floor(Math.random() * btn.length)
-          $("button").addClass(btn[temp])
+          $(".btn").removeClass("btn-primary-2")
+          $(".btn").addClass(btn[2])
 
         }
         if (c === true) {
-          $("button").removeClass("btn-primary-3")
-          temp = Math.floor(Math.random() * btn.length)
-          $("button").addClass(btn[temp])
+          $(".btn").removeClass("btn-primary-3")
+          $(".btn").addClass(btn[0])
 
         }
 
@@ -130,76 +39,26 @@
 
 
       $("#themeChanger").click(function () {
-        a = $(".btn").hasClass("btn-primary")
+        a = $("a").hasClass("btn-primary")
         b = $(".btn").hasClass("btn-primary-2")
         c = $(".btn").hasClass("btn-primary-3")
 
         if (a === true) {
           $(".btn").removeClass("btn-primary")
-          temp = Math.floor(Math.random() * btn.length)
-          $(".btn").addClass(btn[temp])
+          $(".btn").addClass(btn[1])
 
         }
+
         if (b === true) {
           $(".btn").removeClass("btn-primary-2")
-          temp = Math.floor(Math.random() * btn.length)
-          $(".btn").addClass(btn[temp])
+          $(".btn").addClass(btn[2])
 
         }
-        if (c === true) {
+
+        if (a === true) {
           $(".btn").removeClass("btn-primary-3")
-          temp = Math.floor(Math.random() * btn.length)
-          $(".btn").addClass(btn[temp])
+          $(".btn").addClass(btn[0])
 
-        }
-
-      })
-    }
-
-    function divChanger() {
-      var a = ''
-      var b = ''
-
-
-      $("#themeChanger").click(function () {
-        a = $("div").hasClass("text-dark")
-        b = $("div").hasClass("text-light")
-
-        if (a === true && $("section div").hasClass("bg-dark")) {
-          $("div").removeClass("text-dark")
-          $("div").addClass("text-light")
-
-        }
-        if (b === true && $("section div").hasClass("bg-white")) {
-          $("section").removeClass("text-light")
-          $("section").addClass("text-dark")
-
-
-        }
-      })
-    }
-
-    function logoChanger() {
-      var a = ''
-      var b = ''
-      var d = ''
-      var c = ''
-
-      $("#themeChanger").click(function () {
-        a = $("img").hasClass("logo")
-        b = $("section").hasClass("bg-white")
-        c = $("section").hasClass("bg-dark")
-        d = $("nav").hasClass("bg-white")
-        e = $("nav").hasClass("bg-light")
-
-
-        if (a === true && b === true) {
-          $(".logo").removeAttr("src", "assets/img/logos/logo.png")
-          $(".logo").attr("src", "assets/img/logos/logo-alt.png")
-        }
-        if (a === true && c === true) {
-          $(".logo").removeAttr("src", "assets/img/logos/logo-alt.png")
-          $(".logo").attr("src", "assets/img/logos/logo.png")
         }
 
       })
@@ -211,57 +70,28 @@
       var c = ''
 
       $("#themeChanger").click(function () {
-        a = $("div").hasClass("card-body")
-        b = $("div").hasClass("bg-white")
-        c = $("div").hasClass("bg-dark")
-        c = $("a").hasClass("bg-dark")
-
-
-        if (a === true && b === true) {
-          $("div .card-body").removeClass("bg-white")
-          $("div .card-body").addClass("bg-dark")
-          $("div .card-body").addClass("text-light")
-        } else {
-          $("div .card-body").removeClass("bg-dark")
-          $("div .card-body").removeClass("text-light")
-          $("div .card-body").addClass("bg-white")
-          $("div .card-body").addClass("text-dark")
-        }
-      })
-    }
-
-    function navChanger() {
-      var a = ''
-      var b = ''
-
-      $("#themeChanger").click(function () {
-        a = $("nav").hasClass("bg-white")
-        b = $("nav").hasClass("bg-dark")
+        a = $(".card").hasClass("bg-primary")
+        b = $(".card").hasClass("bg-primary-2")
+        c = $(".card").hasClass("bg-primary-3")
 
         if (a === true) {
-          $("nav").removeClass("bg-white")
-          $("nav").addClass("bg-dark")
-          $("nav a").removeClass("text-dark")
-          $("nav a").addClass("text-light")
-          $("nav img").removeAttr("src", "assets/img/logos/logo.png")
-          $("nav img").attr("src", "assets/img/logos/logo-alt.png")
+          $(".card").removeClass("btn-primary")
+          $(".card").addClass(bg[1])
 
-        } else {
-          $("nav").removeClass("bg-dark")
-          $("nav").addClass("bg-white")
-          $("nav a").removeClass("text-light")
-          $("nav a").addClass("text-dark")
-          $("nav img").removeAttr("src", "assets/img/logos/logo-alt.png")
-          $("nav img").attr("src", "assets/img/logos/logo.png")
+        }
+        if (b === true) {
+          $(".card").removeClass("btn-primary-2")
+          $(".card").addClass(bg[2])
+
+        }
+        if (c === true) {
+          $(".card").removeClass("btn-primary-3")
+          $(".card").addClass(bg[0])
+
         }
       })
     }
 
-    navChanger()
-    // cardChanger()
-    logoChanger()
-    sectionChanger()
-    divChanger()
-    footerChanger()
+    cardChanger()
     buttonChanger()
-    linkChanger()
+    // linkChanger()
