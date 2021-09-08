@@ -1,6 +1,7 @@
     var bg = ["bg-primary", "bg-primary-2", "bg-primary-3"];
     var btn = ["btn-primary", "btn-primary-2", "btn-primary-3"];
     var icon = ["icon", "icon-2", "icon-3", ]
+    var text = ["text-primary", "text-primary-2", "text-primary-3"]
 
     function buttonChanger() {
       var a = ''
@@ -35,29 +36,41 @@
       var a = ''
       var b = ''
       var c = ''
-      var temp = ''
+      var d = ''
+      var e = ''
+      var f = ''
 
 
       $("#themeChanger").click(function () {
-        a = $("a").hasClass("btn-primary")
-        b = $(".btn").hasClass("btn-primary-2")
-        c = $(".btn").hasClass("btn-primary-3")
+        a = $("a[class~='page-link']").hasClass("text-primary")
+        b = $("a[class~='page-link']").hasClass("text-primary-2")
+        c = $("a[class~='page-link']").hasClass("text-primary-3")
+        d = $("a[class~='page-link']").hasClass("text-primary")
+        e = $("a[class~='page-link']").hasClass("text-primary-2")
+        f = $("a[class~='page-link']").hasClass("text-primary-3")
 
         if (a === true) {
-          $(".btn").removeClass("btn-primary")
-          $(".btn").addClass(btn[1])
+          $("a[class~='page-link']").removeClass("text-primary")
+          $("a[class~='page-link']").addClass(text[1])
 
         }
 
         if (b === true) {
-          $(".btn").removeClass("btn-primary-2")
-          $(".btn").addClass(btn[2])
+          $("a[class~='page-link']").removeClass("text-primary-2")
+          $("a[class~='page-link']").addClass(text[2])
 
         }
 
-        if (a === true) {
-          $(".btn").removeClass("btn-primary-3")
-          $(".btn").addClass(btn[0])
+        if (c === true) {
+          $("a[class~='page-link']").removeClass("text-primary-3")
+          $("a[class~='page-link']").addClass(text[0])
+
+        }
+
+        if (d === true) {
+          console.log("var d detected")
+          $("a[class~='nav-link']").removeClass("text-primary")
+          $("a[class~='nav-link']").addClass(text[1])
 
         }
 
@@ -75,17 +88,17 @@
         c = $(".card").hasClass("bg-primary-3")
 
         if (a === true) {
-          $(".card").removeClass("btn-primary")
+          $(".card").removeClass("bg-primary")
           $(".card").addClass(bg[1])
 
         }
         if (b === true) {
-          $(".card").removeClass("btn-primary-2")
+          $(".card").removeClass("bg-primary-2")
           $(".card").addClass(bg[2])
 
         }
         if (c === true) {
-          $(".card").removeClass("btn-primary-3")
+          $(".card").removeClass("bg-primary-3")
           $(".card").addClass(bg[0])
 
         }
@@ -94,4 +107,4 @@
 
     cardChanger()
     buttonChanger()
-    // linkChanger()
+    linkChanger()
