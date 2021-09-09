@@ -13003,12 +13003,18 @@ svg.bg-primary-3-alt * {
 }
 
 .text-light svg.icon:not([class*='bg-']) * {
-  fill: #EBF4FF;
+  fill: #2388FF;
 }
 
-.text-primary svg.icon:not([class*='bg-']) * {
-  fill: #EBF4FF;
+.text-primary-2 svg.icon:not([class*='bg-']) * {
+  fill: #FFE357;
 }
+
+.text-primary-3 svg.icon:not([class*='bg-']) * {
+  fill: #24FF85;
+}
+
+
 
 @font-face {
   font-family: 'Inter UI';

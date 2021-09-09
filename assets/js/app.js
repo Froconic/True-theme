@@ -39,15 +39,19 @@
       var d = ''
       var e = ''
       var f = ''
+      var g = ''
+      var h = ''
+      var i = ''
 
 
       $("#themeChanger").click(function () {
         a = $("a[class~='page-link']").hasClass("text-primary")
         b = $("a[class~='page-link']").hasClass("text-primary-2")
         c = $("a[class~='page-link']").hasClass("text-primary-3")
-        d = $("a[class~='page-link']").hasClass("text-primary")
-        e = $("a[class~='page-link']").hasClass("text-primary-2")
-        f = $("a[class~='page-link']").hasClass("text-primary-3")
+        d = $("a[class~='nav-link']").hasClass("text-primary")
+        e = $("a[class~='nav-link']").hasClass("text-primary-2")
+        f = $("a[class~='nav-link']").hasClass("text-primary-3")
+        g = $("a[name~='href']")
 
         if (a === true) {
           $("a[class~='page-link']").removeClass("text-primary")
@@ -68,9 +72,26 @@
         }
 
         if (d === true) {
-          console.log("var d detected")
           $("a[class~='nav-link']").removeClass("text-primary")
           $("a[class~='nav-link']").addClass(text[1])
+
+        }
+
+        if (e === true) {
+          $("a[class~='nav-link']").removeClass("text-primary-2")
+          $("a[class~='nav-link']").addClass(text[2])
+
+        }
+
+        if (f === true) {
+          $("a[class~='nav-link']").removeClass("text-primary-3")
+          $("a[class~='nav-link']").addClass(text[0])
+
+        }
+
+        if (g === true) {
+          $("a[name~='href']").removeClass("text-primary")
+          $("a[name~='href']").addClass(text[1])
 
         }
 
@@ -102,6 +123,16 @@
           $(".card").addClass(bg[0])
 
         }
+      })
+    }
+
+    function badgeChanger() {
+      var a = ''
+      var b = ''
+      var c = ''
+
+      $("#themeChanger").click(function () {
+        a = $("span").hasClass
       })
     }
 
