@@ -2,6 +2,7 @@
     var btn = ["btn-primary", "btn-primary-2", "btn-primary-3"];
     var icon = ["icon", "icon-2", "icon-3", ]
     var text = ["text-primary", "text-primary-2", "text-primary-3"]
+    var badge = ["badge-primary", "badge-primary-2", "badge-primary-3"]
 
     function buttonChanger() {
       var a = ''
@@ -132,10 +133,29 @@
       var c = ''
 
       $("#themeChanger").click(function () {
-        a = $("span").hasClass
+        a = $("span[class~=badge]").hasClass("badge-primary")
+        b = $("span").hasClass("badge-primary-2")
+        c = $("span").hasClass("badge-primary-3")
+
+        if (a === true) {
+          $("span[class~=badge]").removeClass("badge-primary")
+          $("span[class~=badge]").addClass(badge[1])
+        }
+
+        if (b === true) {
+          $("span[class~=badge]").removeClass("badge-primary-2")
+          $("span[class~=badge]").addClass(badge[2])
+        }
+
+        if (c === true) {
+          $("span[class~=badge]").removeClass("badge-primary-3")
+          $("span[class~=badge]").addClass(badge[0])
+        }
+
       })
     }
 
     cardChanger()
     buttonChanger()
     linkChanger()
+    badgeChanger()

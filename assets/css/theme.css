@@ -4657,6 +4657,12 @@ input[type="button"].btn-block {
   padding: 0.5rem 1rem;
 }
 
+.navbar-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
@@ -5620,14 +5626,14 @@ a.badge:focus {
 }
 
 .badge-primary {
-  color: #EBF4FF;
-  background-color: #2388FF;
+  background-color: #4B5158;
+  color: #2388FF;
 }
 
 a.badge-primary:hover,
 a.badge-primary:focus {
-  color: #EBF4FF;
-  background-color: #2c4396;
+  background-color: #EBF4FF;
+  color: #2c4396;
 }
 
 a.badge-primary:focus,
@@ -5756,14 +5762,14 @@ a.badge-dark.focus {
 }
 
 .badge-primary-2 {
-  color: #212529;
-  background-color: #FF8E88;
+  background-color: #4B5158;
+  color: #FFE357;
 }
 
 a.badge-primary-2:hover,
 a.badge-primary-2:focus {
-  color: #212529;
-  background-color: #ff5e55;
+  color: #EBF4FF;
+  background-color: #F5CC00;
 }
 
 a.badge-primary-2:focus,
@@ -5773,14 +5779,14 @@ a.badge-primary-2.focus {
 }
 
 .badge-primary-3 {
-  color: #EBF4FF;
-  background-color: #1B1F3B;
+  background-color: #4B5158;
+  color: #24FF85;
 }
 
 a.badge-primary-3:hover,
 a.badge-primary-3:focus {
   color: #EBF4FF;
-  background-color: #0b0d18;
+  background-color: #00E065;
 }
 
 a.badge-primary-3:focus,
