@@ -33,6 +33,20 @@
       })
     }
 
+    function testLink() {
+      a = ''
+
+      $("#themeChanger").cllick(function () {
+       a = $("a.navlink").hasClass("text-primary")
+
+       if (a === true) {
+         console.log("a detected")
+         $(a).removeClass("text-primary")
+         $(a).addClass(text[1])
+       }
+      })
+    }
+
     function linkChanger() {
       var a = ''
       var b = ''
@@ -53,6 +67,18 @@
         e = $("a[class~='nav-link']").hasClass("text-primary-2")
         f = $("a[class~='nav-link']").hasClass("text-primary-3")
         g = $("a[name~='href']")
+        h = $("a").hasClass("text-primary")
+        i = $("a").hasClass("text-primary-2")
+        j = $("a").hasClass("text-primary-3")
+        k = $(".btn").hasClass("btn-primary")
+        l = $(".btn").hasClass("btn-primary-2")
+        m = $(".btn").hasClass("btn-primary-3")
+        n = $(".card").hasClass("bg-primary")
+        o = $(".card").hasClass("bg-primary-2")
+        p = $(".card").hasClass("bg-primary-3")
+        q = $(".card, ").hasClass("bg-primary-3")
+
+
 
         if (a === true) {
           $("a[class~='page-link']").removeClass("text-primary")
@@ -90,11 +116,59 @@
 
         }
 
-        if (g === true) {
-          $("a[name~='href']").removeClass("text-primary")
-          $("a[name~='href']").addClass(text[1])
+        // if (g === true) {
+        //   $("a[name~='href']").removeClass("text-primary")
+        //   $("a[name~='href']").addClass(text[1])
+        // }
+
+        if (h === true) {
+          $("a[class~='text-primary']").removeClass("text-primary")
+          $("a").addClass(text[1])
+        }
+
+        if (i === true) {
+          $("a[class~='text-primary-2']").removeClass("text-primary-2")
+          $("a").addClass(text[2])
+        }
+
+        if (j === true) {
+          $("a[class~='text-primary-3']").removeClass("text-primary-3")
+          $("a").addClass(text[0])
+        }
+
+        if (k === true) {
+          $(".btn").removeClass("btn-primary")
+          $(".btn").addClass(btn[1])
 
         }
+        if (l === true) {
+          $(".btn").removeClass("btn-primary-2")
+          $(".btn").addClass(btn[2])
+
+        }
+        if (m === true) {
+          $(".btn").removeClass("btn-primary-3")
+          $(".btn").addClass(btn[0])
+
+        }
+
+        if (n === true) {
+          $(".card").removeClass("bg-primary")
+          $(".card").addClass(bg[1])
+
+        }
+        if (o === true) {
+          $(".card").removeClass("bg-primary-2")
+          $(".card").addClass(bg[2])
+
+        }
+        if (p === true) {
+          $(".card").removeClass("bg-primary-3")
+          $(".card").addClass(bg[0])
+
+        }
+
+
 
       })
     }
@@ -155,7 +229,36 @@
       })
     }
 
-    cardChanger()
-    buttonChanger()
-    linkChanger()
+    function iconChanger() {
+      a = ''
+      b = ''
+      c = ''
+
+      $("#themeChanger").click(function () {
+        a = $(".icon").hasClass("bg-primary")
+        b = $(".icon").hasClass("bg-primary-2")
+        c = $(".icon").hasClass("bg-primary-3")
+
+        if (a === true) {
+          $(".icon").removeClass("bg-primary")
+          $(".icon").addClass(bg[1])
+        }
+
+        if (b === true) {
+          $(".icon").removeClass("bg-primary-2")
+          $(".icon").addClass(bg[2])
+        }
+
+        if (c === true) {
+          $(".icon").removeClass("bg-primary-3")
+          $(".icon").addClass(bg[0])
+        }
+
+      })
+    }
+
+    // cardChanger()
+    // buttonChanger()
+    // linkChanger()
     badgeChanger()
+    iconChanger()
