@@ -71,7 +71,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #001429;
   text-align: left;
   background-color: #C8CAD0;
 }
@@ -387,7 +387,7 @@ h6,
   font-family: inherit;
   font-weight: 600;
   line-height: 1.2;
-  color: #212529;
+  color: #001429;
 }
 
 h1,
@@ -7418,7 +7418,7 @@ button.bg-light:focus {
 }
 
 .bg-black {
-  background-color: #3b4046 !important;
+  background-color: #4b5158 !important;
 }
 
 
@@ -11905,7 +11905,7 @@ a.text-light:focus {
 }
 
 .text-dark {
-  color: #000A14 !important;
+  color: #001429 !important;
 }
 
 a.text-dark:hover,
@@ -13114,7 +13114,7 @@ h5,
 .display-2,
 .display-3,
 .display-4 {
-  color: #212529;
+  color: #001429;
 }
 
 .display-1,
@@ -14917,6 +14917,7 @@ blockquote .btn {
   position: relative;
   bottom: 1px;
   vertical-align: middle;
+  max-width: 50px;
 }
 
 .badge .icon {
@@ -15082,7 +15083,7 @@ blockquote .btn {
 }
 
 .divider svg:not([class*='bg']) path {
-  fill: #C8CAD0;
+  fill: #4b5158;
 }
 
 .divider:not(:first-child) {
